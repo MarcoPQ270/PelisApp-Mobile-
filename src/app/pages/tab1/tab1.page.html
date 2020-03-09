@@ -1,0 +1,55 @@
+<ion-header [translucent]="true" no-border>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-icon slot="icon-only" name="videocam-outline"></ion-icon>
+        </ion-buttons>
+        <ion-title>
+            PelisApp
+        </ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+    <ion-grid fixed>
+        <ion-row>
+            <ion-col>
+                <h3 align="center">Peliculas Nuevas</h3>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+
+    <app-slideshow-backdrop [Peliculas]="peliculasRecientes"></app-slideshow-backdrop>
+
+    <ion-grid fixed>
+        <ion-row>
+            <ion-col>
+                <h3 align="center">Cartelera</h3>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+
+    <app-slideshow-poster [Peliculas]="peliculasRecientes"></app-slideshow-poster>
+
+    <ion-grid fixed>
+        <ion-row>
+            <ion-col>
+                <h3 align="center">Peliculas Populares</h3>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+
+    <app-slideshow-poster [Peliculas]="peliculasPopulares"></app-slideshow-poster>
+
+    <ion-grid fixed>
+        <ion-row>
+            <ion-col>
+                <h3 align="center">Peliculas Populares</h3>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+
+
+    <app-slideshow-pares [Peliculas]="peliculasPopulares" (cargarMas)="cargarMas()"></app-slideshow-pares>
+
+</ion-content>

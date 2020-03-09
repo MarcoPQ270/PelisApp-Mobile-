@@ -1,5 +1,7 @@
 {
   "name": "PelisApp",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

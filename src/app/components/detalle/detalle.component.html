@@ -1,0 +1,7 @@
+<ion-content>
+    <ion-label class="titulo">
+        <h1>{{Peliculas.title }}</h1>
+    </ion-label>
+    <img [src]="Peliculas.backdrop_path | imagen" *ngIf="Peliculas.backdrop_path">
+
+</ion-content>
